@@ -35,6 +35,11 @@ Example for `application.yml`:
    endpoint:
      health:
        show-details: always
+info:
+    app:
+      name: Spring Boot 4 Personal Feature Snippet
+      description: A Spring Boot 4 application demonstrating custom feature.
+      version: 1.0.0
 ```
 
 3. Access Health Endpoint
