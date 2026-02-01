@@ -23,9 +23,9 @@ Example for `application.properties`:
 ```properties
  management.endpoints.web.exposure.include=health,info
  management.endpoint.health.show-details=always
- info.app.name: Spring Boot 4 Person Feature Snippets
- info.app.description: A Spring Boot 4 application demonstrating custom feature
- info.app.version: 1.0.0
+ info.app.name=Spring Boot 4 Person Feature Snippets
+ info.app.description=A Spring Boot 4 application demonstrating custom feature
+ info.app.version=1.0.0
 ```
 
 Example for `application.yml`:
