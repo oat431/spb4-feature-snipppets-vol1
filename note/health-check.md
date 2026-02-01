@@ -21,6 +21,7 @@ For Gradle, add this line to your `build.gradle` file:
 You can customize the Actuator endpoints by adding properties to your `application.properties` or `application.yml` file.
 Example for `application.properties`:
 ```properties
+ management.info.env.enabled=true
  management.endpoints.web.exposure.include=health,info
  management.endpoint.health.show-details=always
  info.app.name=Spring Boot 4 Person Feature Snippets
@@ -30,7 +31,10 @@ Example for `application.properties`:
 
 Example for `application.yml`:
 ```yaml
- management:
+management:
+  info:
+    env:
+      enabled: true
    endpoints:
      web:
        exposure:
