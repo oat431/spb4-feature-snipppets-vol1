@@ -3,7 +3,7 @@ package panomete.project.spb4featsnip.common;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description = "Details about an error that occurred during request processing")
-public record ResponseError(
+public record ResponseDTOError(
         @Schema(
                 description = "HTTP status code associated with the error",
                 example = "404",

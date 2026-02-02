@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import panomete.project.spb4featsnip.common.ResponseDTO;
-import panomete.project.spb4featsnip.common.ResponseStatus;
+import panomete.project.spb4featsnip.common.ResponseDTOStatus;
 
 @RestController
 @RequestMapping("/api/v1/template")
@@ -30,7 +30,7 @@ public class TemplateController {
     public ResponseEntity<ResponseDTO<String>> helloWorld() {
         ResponseDTO<String> response = new ResponseDTO<>(
                 "Spring Boot 4 Feature Snippets",
-                ResponseStatus.SUCCESS,
+                ResponseDTOStatus.SUCCESS,
                 null
         );
         return ResponseEntity.ok(response);

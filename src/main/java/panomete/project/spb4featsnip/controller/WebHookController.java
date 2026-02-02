@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import panomete.project.spb4featsnip.common.ResponseDTO;
-import panomete.project.spb4featsnip.common.ResponseStatus;
+import panomete.project.spb4featsnip.common.ResponseDTOStatus;
 
 @RestController
 @RequestMapping("/api/v1/webhook")
@@ -21,7 +21,7 @@ public class WebHookController {
     public ResponseDTO<String> webhook() {
         return new ResponseDTO<>(
                 "webhook triggered successfully",
-                ResponseStatus.SUCCESS,
+                ResponseDTOStatus.SUCCESS,
                 null
         );
     }

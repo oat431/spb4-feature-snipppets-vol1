@@ -3,7 +3,7 @@ package panomete.project.spb4featsnip.common;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description = "Status of the response")
-public enum ResponseStatus {
+public enum ResponseDTOStatus {
     @Schema(description = "The request was successful and processed without errors")
     SUCCESS,
 

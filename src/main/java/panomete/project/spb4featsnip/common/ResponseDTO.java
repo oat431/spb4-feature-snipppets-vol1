@@ -14,11 +14,11 @@ public record ResponseDTO<T>(
                 description = "Status of the response",
                 requiredMode = Schema.RequiredMode.REQUIRED
         )
-        ResponseStatus status,
+        ResponseDTOStatus status,
 
         @Schema(
                 description = "Details about any error that occurred during request processing",
                 requiredMode = Schema.RequiredMode.REQUIRED
         )
-        ResponseError error
+        ResponseDTOError error
 ) { }

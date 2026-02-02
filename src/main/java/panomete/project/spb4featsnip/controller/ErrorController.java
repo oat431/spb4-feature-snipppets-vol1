@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import panomete.project.spb4featsnip.common.ResponseDTO;
-import panomete.project.spb4featsnip.common.ResponseStatus;
+import panomete.project.spb4featsnip.common.ResponseDTOStatus;
 import panomete.project.spb4featsnip.service.ErrorService;
 
 @RestController
@@ -22,7 +22,7 @@ public class ErrorController {
     private final ErrorService errorService;
     private final ResponseDTO<String> normalResponse = new ResponseDTO<>(
             "This response should never be returned",
-            ResponseStatus.SUCCESS,
+            ResponseDTOStatus.SUCCESS,
             null
     );
 

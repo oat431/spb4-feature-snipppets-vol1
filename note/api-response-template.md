@@ -22,7 +22,7 @@ Java Class Representation:
 
 ResponseStatus.java
 ```java
-public enum ResponseStatus {
+public enum ResponseDTOStatus {
     SUCCESS, FAIL, ERROR
 }
 
@@ -30,7 +30,7 @@ public enum ResponseStatus {
 
 ResponseError.java
 ```java
-public record ResponseError(
+public record ResponseDTOError(
         Integer httpCode,
         String errorCode,
         String message
@@ -42,8 +42,8 @@ ResponseDTO.java
 ```java
 public record ResponseDTO<T>(
         T data,
-        ResponseStatus status,
-        ResponseError error
+        ResponseDTOStatus status,
+        ResponseDTOError error
 ) { }
 
 ```
